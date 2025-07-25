@@ -40,3 +40,9 @@ writeFile("Have a nice day")
 .catch((err) => {
     console.error("An error occured", err)
 })
+
+
+// Adding data to an existing file
+fs.appendFile('sample.txt', ' This data is appended after creation', (err) => {
+    console.log('Data appended successfully')
+})
