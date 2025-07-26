@@ -42,7 +42,7 @@ writeFile("Have a nice day")
 })
 
 
-// Adding data to an existing file
+// Writing into an existing file
 fs.appendFile('sample.txt', ' This data is appended after creation', (err) => {
     console.log('Data appended successfully')
 })
