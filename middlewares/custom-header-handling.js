@@ -1,4 +1,4 @@
-// Middleware for adding custom header in get request
+// Middleware for adding Custom-Header in GET request
 app.use((req, res, next) => {
     if(req.method === 'GET'){
         res.setHeader('X-Custom-Header', 'Header added for get request')
@@ -6,7 +6,7 @@ app.use((req, res, next) => {
     next()
 })
 
-// middleware to block get request with custom header.
+// Middleware to block GET request with Custom-Header
 app.use((req, res, next) => {
     if(req.method === 'GET'){
         res.setHeader('X-Custom-Header', 'Get request are blocked')
